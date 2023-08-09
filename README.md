@@ -1,4 +1,4 @@
-# leetcode
+# Leetcode
 
 A repository filled with LeetCode exercises to sharpen my problem solving skills
 
