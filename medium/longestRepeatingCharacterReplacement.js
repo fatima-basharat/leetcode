@@ -39,7 +39,7 @@ var characterReplacement = function(s, k) {
 
     for(let right = 0; right < s.length; right++){
         let length = right - left + 1
-        count.set(s[right], 1 + s[right] || 0)
+        count.set(s[right], 1 + (count.get(s[right]) || 0))
         
         if((length - Math.max(...count.values())) > k){
             count.set(s[left], count.get(s[left]) - 1)
